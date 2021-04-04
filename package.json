@@ -1,0 +1,27 @@
+{
+  "name": "industrialsymbiosis",
+  "version": "0.0.1",
+  "description": "Module to enable Industrial Symbiosis between multiple chemical plants",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lakiduck/IndustrialSymbiosis.git"
+  },
+  "keywords": [
+    "Industrial",
+    "Symbiosis"
+  ],
+  "author": "Lakshan Walgama & Henry Razay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lakiduck/IndustrialSymbiosis/issues"
+  },
+  "homepage": "https://github.com/Lakiduck/IndustrialSymbiosis#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
