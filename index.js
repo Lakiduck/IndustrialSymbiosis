@@ -1,4 +1,5 @@
 var express = require('express');
+var submitForm = require("./controllers/submitFormController");
 
 var app = express();
 
@@ -13,5 +14,7 @@ app.get('/form', function(req, res){
 app.get('/match', function(req, res){
     res.send('Placeholder String');
 });
+
+submitForm(app);
 
 app.listen(3000);
