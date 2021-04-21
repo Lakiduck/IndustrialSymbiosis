@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Industrial Symbiosis - Match</title>
+    </head>
+    <body>
+        <h1>Here are your matches <%=target.cname%></h1>
+        <h3>Matches for your output</h3>
+        <ul>
+            <%inputMatches.forEach(function(inputMatch){%>
+                <li><%=inputMatch.company%>,<%=inputMatch.input1%>,<%=inputMatch.inputQuantity1%>,<%=inputMatch.inputUnit1%></li>
+            <%});%>
+        </ul>
+        <h3>Where to get your input from</h3>
+        <ul>
+            <%outputMatches.forEach(function(outputMatch){%>
+                <li><%=outputMatch.company%>,<%=outputMatch.output1%>,<%=outputMatch.outputQuantity1%>,<%=outputMatch.outputUnit1%></li>
+            <%});%>            
+        </ul>
+    </body>
+</html>
