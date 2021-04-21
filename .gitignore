@@ -107,4 +107,4 @@ dist
 prepros-6.config
 
 # dbString
-model/dbString.js
+models/dbString.js
