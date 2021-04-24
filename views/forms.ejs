@@ -9,13 +9,7 @@
     </head>
     <body>
         <div id="grid">
-            <nav>
-                <h1>Industrial Symbiosis</h1>
-                <ul>
-                    <li>Home</li>
-                    <li>Form</li>
-                </ul>
-            </nav>
+            <%- include('partials/nav'); %>
             <form method="POST" action="/match">
                 <div class="combo">
                     <label for="cname">Company Name:</label>
