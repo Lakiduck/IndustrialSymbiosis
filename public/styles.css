@@ -40,3 +40,9 @@ form {
       border-radius: 10px; }
     form .combo label {
       font-family: 'IBM Plex Mono', monospace; }
+
+#tt {
+  display: block;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13; }
