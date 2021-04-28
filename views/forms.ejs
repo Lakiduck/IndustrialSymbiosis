@@ -2,15 +2,19 @@
 <html>
     <head>
         <title>Industrial Symbiosis</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link href="/public/styles.css" rel="stylesheet" type="text/css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="grid">
-            <%- include('partials/nav'); %>
-            <form method="POST" action="/match">
+        <%- include('partials/nav'); %>
+        <div class="row">
+            <form method="POST" action="/match" class="col s12">
                 <div class="combo">
                     <label for="cname">Company Name:</label>
                     <input type="text" id="cname" name="cname">
@@ -32,8 +36,8 @@
                     <input type="text" id="unit2" name="unit2">
                 </div>
                 <div class="combo">
-                    <input type="submit" value="Submit">
-                    <input type="button" value="Clear">
+                    <input type="submit" value="Submit" class="btn waves-effect waves-light">
+                    <input type="button" value="Clear" class="waves-effect waves-teal btn-flat">
                 </div>
             </form>
         </div>
