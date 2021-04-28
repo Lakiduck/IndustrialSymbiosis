@@ -1,11 +1,8 @@
-var bodyParser = require('body-parser');
 var Model = require('../models/symbiosis');
 var events = require('events');
 
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
 module.exports = function(app){
-    app.post('/match', urlencodedParser, function (req, res) {
+    app.post('/match', function (req, res) {
         var inputMatch;
         var outputMatch;
         var entry = new Model({
